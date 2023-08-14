@@ -9,7 +9,7 @@ const tele = window.Telegram.WebApp;
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
-  const [test, setTest] = useState([]);
+  const [test, setTest] = useState("");
 
   useEffect(() => {
     tele.ready();
@@ -50,19 +50,14 @@ function App() {
         window.PublicKeyCredential
       )
     );
-    setTest([
-      navigator.credentials,
-      navigator.credentials.create,
-      navigator.credentials.get,
-      window.PublicKeyCredential,
-    ]);
+    setTest(`Has window.PublicKeyCredential? ${!!window.PublicKeyCredential}`);
     tele.MainButton.text = "Pay :)";
     tele.MainButton.show();
   };
 
   return (
     <>
-      <h1 className="heading">credentials : {test.toString()}</h1>
+      <h1 className="heading"> {test.toString()}</h1>
       <Cart cartItems={cartItems} onCheckout={onCheckout} />
       <div className="cards__container">
         {foods.map((food) => {
