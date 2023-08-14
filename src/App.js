@@ -50,7 +50,9 @@ function App() {
         window.PublicKeyCredential
       )
     );
-    setTest(`Has window.PublicKeyCredential? ${!!window.PublicKeyCredential}`);
+    setTest(
+      `Has window.PublicKeyCredential? ${!!window.PublicKeyCredential} PasswordCredential?${!!window.PasswordCredential}`
+    );
     tele.MainButton.text = "Pay :)";
     tele.MainButton.show();
   };
