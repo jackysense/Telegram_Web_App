@@ -46,13 +46,15 @@ function App() {
       !!(
         navigator.credentials &&
         navigator.credentials.create &&
-        navigator.credentials.get
+        navigator.credentials.get &&
+        window.PublicKeyCredential
       )
     );
     setTest([
       navigator.credentials,
       navigator.credentials.create,
       navigator.credentials.get,
+      window.PublicKeyCredential,
     ]);
     tele.MainButton.text = "Pay :)";
     tele.MainButton.show();
