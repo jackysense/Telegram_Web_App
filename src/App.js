@@ -9,6 +9,7 @@ const tele = window.Telegram.WebApp;
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
+  const [test, setTest] = useState([]);
 
   useEffect(() => {
     tele.ready();
@@ -41,14 +42,26 @@ function App() {
   };
 
   const onCheckout = () => {
+    alert(
+      !!(
+        navigator.credentials &&
+        navigator.credentials.create &&
+        navigator.credentials.get
+      )
+    );
+    setTest([
+      navigator.credentials,
+      navigator.credentials.create,
+      navigator.credentials.get,
+    ]);
     tele.MainButton.text = "Pay :)";
     tele.MainButton.show();
   };
 
   return (
     <>
-      <h1 className="heading">Order Food</h1>
-      <Cart cartItems={cartItems} onCheckout={onCheckout}/>
+      <h1 className="heading">credentials : {test.toString()}</h1>
+      <Cart cartItems={cartItems} onCheckout={onCheckout} />
       <div className="cards__container">
         {foods.map((food) => {
           return (
