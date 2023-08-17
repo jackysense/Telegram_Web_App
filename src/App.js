@@ -60,7 +60,11 @@ function App() {
   return (
     <>
       <h1 className="heading"> {test.toString()}</h1>
-      <h1>is In IFrame {window.parent != null && window != window.parent}</h1>
+      <h1>
+        {`is In IFrame ${!!(
+          window.parent != null && window !== window.parent
+        )}`}
+      </h1>
       <button
         onClick={() => {
           window.external.notify(
