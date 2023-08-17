@@ -75,9 +75,11 @@ function App() {
       >
         outer Click
       </button>
+      <br />
       <a href="https://example.hanko.io/" style={{ color: "#fff" }}>
-        open
+        open passkey
       </a>
+      <br /> <br />
       <a
         href="https://telegram-web-app-2.vercel.app/"
         style={{ color: "#fff" }}
