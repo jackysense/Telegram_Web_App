@@ -60,6 +60,7 @@ function App() {
   return (
     <>
       <h1 className="heading"> {test.toString()}</h1>
+      <h1>is In IFrame {window.parent != null && window != window.parent}</h1>
       <button
         onClick={() => {
           window.external.notify(
@@ -72,6 +73,12 @@ function App() {
       </button>
       <a href="https://example.hanko.io/" style={{ color: "#fff" }}>
         open
+      </a>
+      <a
+        href="https://telegram-web-app-three.vercel.app/"
+        style={{ color: "#fff" }}
+      >
+        open outer
       </a>
       <Cart cartItems={cartItems} onCheckout={onCheckout} />
       <div className="cards__container">
