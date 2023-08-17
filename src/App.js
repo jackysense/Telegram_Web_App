@@ -60,6 +60,16 @@ function App() {
   return (
     <>
       <h1 className="heading"> {test.toString()}</h1>
+      <button
+        onClick={() => {
+          window.external.notify(
+            JSON.stringify({ eventType: "webauthn", eventData: "OK" })
+          );
+        }}
+        className="btn btn-primary"
+      >
+        outer Click
+      </button>
       <a href="https://example.hanko.io/" style={{ color: "#fff" }}>
         open
       </a>
