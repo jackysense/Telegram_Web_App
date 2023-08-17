@@ -60,6 +60,9 @@ function App() {
   return (
     <>
       <h1 className="heading"> {test.toString()}</h1>
+      <a href="https://example.hanko.io/" style={{ color: "#fff" }}>
+        open
+      </a>
       <Cart cartItems={cartItems} onCheckout={onCheckout} />
       <div className="cards__container">
         {foods.map((food) => {
