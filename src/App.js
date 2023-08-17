@@ -75,7 +75,7 @@ function App() {
         open
       </a>
       <a
-        href="https://telegram-web-app-three.vercel.app/"
+        href="https://telegram-web-app-2.vercel.app/"
         style={{ color: "#fff" }}
       >
         open outer
