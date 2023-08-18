@@ -79,6 +79,9 @@ function App() {
       <a href="https://example.hanko.io/" style={{ color: "#fff" }}>
         open passkey
       </a>
+      <a href="https://webauthn.io/" style={{ color: "#fff" }}>
+        open webauthn
+      </a>
       <br /> <br />
       <a
         href="https://telegram-web-app-2.vercel.app/"
