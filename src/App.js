@@ -83,6 +83,7 @@ function App() {
       <a href="https://webauthn.io/" style={{ color: "#fff" }}>
         open webauthn
       </a>
+      <br /> <br />
       <a
         href="https://webauthn.passwordless.id/demos/playground.html"
         style={{ color: "#fff" }}
@@ -95,6 +96,10 @@ function App() {
         style={{ color: "#fff" }}
       >
         open outer
+      </a>
+      <br /> <br />
+      <a href="https://webauthn.me/browser-support" style={{ color: "#fff" }}>
+        browser-support
       </a>
       <Cart cartItems={cartItems} onCheckout={onCheckout} />
       <div className="cards__container">
