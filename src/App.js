@@ -79,8 +79,15 @@ function App() {
       <a href="https://example.hanko.io/" style={{ color: "#fff" }}>
         open passkey
       </a>
+      <br /> <br />
       <a href="https://webauthn.io/" style={{ color: "#fff" }}>
         open webauthn
+      </a>
+      <a
+        href="https://webauthn.passwordless.id/demos/playground.html"
+        style={{ color: "#fff" }}
+      >
+        passwordless
       </a>
       <br /> <br />
       <a
