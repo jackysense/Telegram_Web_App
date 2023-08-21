@@ -110,10 +110,9 @@ function App() {
       >
         open test in browser
       </a>
+      <br /> <br />
       <a
         href="https://web-authn-test-nine.vercel.app/"
-        target="_blank"
-        rel="noreferrer"
         style={{ color: "#fff" }}
       >
         open test in webapp
