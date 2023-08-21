@@ -101,6 +101,13 @@ function App() {
       <a href="https://webauthn.me/browser-support" style={{ color: "#fff" }}>
         browser-support
       </a>
+      <br /> <br />
+      <a
+        href="https://web-authn-test-nine.vercel.app/"
+        style={{ color: "#fff" }}
+      >
+        mytest
+      </a>
       <Cart cartItems={cartItems} onCheckout={onCheckout} />
       <div className="cards__container">
         {foods.map((food) => {
