@@ -104,9 +104,19 @@ function App() {
       <br /> <br />
       <a
         href="https://web-authn-test-nine.vercel.app/"
+        target="_blank"
+        rel="noreferrer"
         style={{ color: "#fff" }}
       >
-        mytest
+        open test in browser
+      </a>
+      <a
+        href="https://web-authn-test-nine.vercel.app/"
+        target="_blank"
+        rel="noreferrer"
+        style={{ color: "#fff" }}
+      >
+        open test in webapp
       </a>
       <Cart cartItems={cartItems} onCheckout={onCheckout} />
       <div className="cards__container">
