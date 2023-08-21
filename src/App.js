@@ -117,6 +117,10 @@ function App() {
       >
         open test in webapp
       </a>
+      <br /> <br />
+      <a href="tg://resolve?domain=mraabot" style={{ color: "#fff" }}>
+        finished
+      </a>
       <Cart cartItems={cartItems} onCheckout={onCheckout} />
       <div className="cards__container">
         {foods.map((food) => {
