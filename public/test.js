@@ -28,7 +28,7 @@ function onInit(event) {
 function onRegisterClick() {
   // Call the createCredential method of the WebApp object to create a new passkey
   alert("aaa");
-
+  alert(window.Telegram.WebApp.createCredential);
   window.Telegram.WebApp.createCredential()
     .then((credential) => {
       // Log the credential to the console
