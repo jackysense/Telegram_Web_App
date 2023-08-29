@@ -28,13 +28,13 @@ function onInit(event) {
 // Define a function to handle the click event of the register button
 function onRegisterClick() {
   // Call the createCredential method of the WebApp object to create a new passkey
-  console.log("aaa");
+  alert("aaa");
 
   webApp1
     .createCredential()
     .then((credential) => {
       // Log the credential to the console
-      console.log("Credential:", credential);
+      alert("Credential:" + credential);
 
       // Show a message that says "You have successfully created a new passkey!"
       document.getElementById("message").textContent =
@@ -42,7 +42,7 @@ function onRegisterClick() {
     })
     .catch((error) => {
       // Log the error to the console
-      console.error("Error:", error);
+      alert("Error:" + error);
 
       // Show a message that says "Something went wrong. Please try again."
       document.getElementById("message").textContent =
