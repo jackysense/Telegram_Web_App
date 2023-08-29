@@ -1,5 +1,4 @@
 // Get the WebApp object
-const webApp1 = window.Telegram.WebApp;
 
 // Define a function to handle the init event
 function onInit(event) {
@@ -30,8 +29,7 @@ function onRegisterClick() {
   // Call the createCredential method of the WebApp object to create a new passkey
   alert("aaa");
 
-  webApp1
-    .createCredential()
+  window.Telegram.WebApp.createCredential()
     .then((credential) => {
       // Log the credential to the console
       alert("Credential:" + credential);
@@ -53,8 +51,7 @@ function onRegisterClick() {
 // Define a function to handle the click event of the login button
 function onLoginClick() {
   // Call the getCredential method of the WebApp object to get an existing passkey
-  webApp1
-    .getCredential()
+  window.Telegram.WebApp.getCredential()
     .then((credential) => {
       // Log the credential to the console
       console.log("Credential:", credential);
@@ -74,12 +71,10 @@ function onLoginClick() {
 }
 
 // Get the register button and add a click event listener
-const registerButton = document.getElementById("register");
-registerButton.addEventListener("click", onRegisterClick);
+document.getElementById("register").addEventListener("click", onRegisterClick);
 
 // Get the login button and add a click event listener
-const loginButton = document.getElementById("login");
-loginButton.addEventListener("click", onLoginClick);
+document.getElementById("login").addEventListener("click", onLoginClick);
 
 // Add an event listener for the init event of the WebApp object
-webApp1.onInit(onInit);
+window.Telegram.WebApp.onInit(onInit);
