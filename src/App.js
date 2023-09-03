@@ -241,6 +241,10 @@ function App() {
       <a href="tg://resolve?domain=mraabot" style={{ color: "#fff" }}>
         finished
       </a>
+      <br /> <br />
+      <a href="https://app.uniswap.org/#/swap" style={{ color: "#fff" }}>
+        uniswap
+      </a>
       <Cart cartItems={cartItems} onCheckout={onCheckout} />
       <div className="cards__container">
         {foods.map((food) => {
